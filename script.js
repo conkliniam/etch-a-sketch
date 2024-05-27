@@ -39,6 +39,7 @@ function addGridItems(sideLength) {
 function handleMouseOver(event) {
   const div = event.target;
   div.style.backgroundColor = getRandomColor();
+  updateOpacity(div);
 }
 
 function getRandomColor() {
@@ -47,4 +48,12 @@ function getRandomColor() {
   const blue = Math.floor(Math.random() * 256);
 
   return `rgb(${red}, ${green}, ${blue})`;
+}
+
+function updateOpacity(div) {
+  if (div.style.opacity === "") {
+    div.style.opacity = 1;
+  } else if (div.style.opacity > 0) {
+    div.style.opacity -= 0.1;
+  }
 }
