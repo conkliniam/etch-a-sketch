@@ -7,5 +7,6 @@
 
 .grid-item {
   height: 0;
+  opacity: 1;
   background-color: white;
 }
