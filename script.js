@@ -51,7 +51,9 @@ function getRandomColor() {
 }
 
 function updateOpacity(div) {
-  if (div.style.opacity > 0) {
+  if (div.style.opacity === "") {
+    div.style.opacity = 0.9;
+  } else if (div.style.opacity > 0) {
     div.style.opacity -= 0.1;
   }
 }
