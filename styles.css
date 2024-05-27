@@ -1,0 +1,13 @@
+#grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.grid-item {
+  height: 0;
+}
+
+.blue {
+  background-color: blue;
+}
