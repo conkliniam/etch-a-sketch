@@ -8,7 +8,8 @@ button.addEventListener("click", (event) => {
   let sideLength = 0;
 
   do {
-    sideLength = +prompt("How many squares per side for the new grid?");
+    let input = prompt("How many squares per side for the new grid?");
+    sideLength = input ? +input : DEFAULT_LENGTH;
   } while (sideLength < 1 || sideLength > 100);
 
   grid.innerHTML = "";
